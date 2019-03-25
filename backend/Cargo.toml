@@ -1,7 +1,10 @@
 [package]
 name = "backend"
 version = "0.1.0"
-authors = ["Tom Gowan <s3549186@student.rmit.edu.au>"]
+authors = ["Tom Gowan <tomrgowan@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+actix = "0.7"
+actix-web = "0.7"
+env_logger ="0.6"
