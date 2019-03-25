@@ -19,10 +19,10 @@ fn main() {
             .middleware(middleware::Logger::default())
             .resource("/index.html", |r| r.f(|_| "Hello world!"))
             .resource("/", |r| r.f(index))
-    }).bind("127.0.0.1:8080")
+    }).bind("127.0.0.1:80")
         .unwrap()
         .start();
 
-    println!("Started http server: 127.0.0.1:8080");
+    println!("Started http server: 127.0.0.1:80");
     let _ = sys.run();
 }
